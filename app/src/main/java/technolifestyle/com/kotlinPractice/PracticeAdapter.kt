@@ -7,7 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.main_card_item.view.*
+import technolifestyle.com.kotlinPractice.BottomSheet.BottomSheetActivity
 import technolifestyle.com.kotlinPractice.Notification.NotificationActivity
+import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVTY_TAG
+import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
 
 class PracticeAdapter(private val context: Context?,
                       private val practiceTopics: MutableList<String>) :
@@ -36,8 +39,9 @@ class PracticeViewHolder internal constructor(itemView: View) : RecyclerView.Vie
     }
 
     override fun onClick(view: View?) {
-        when(view?.tag) {
-            "Notifications Android" -> view.context.startActivity(Intent(view.context, NotificationActivity::class.java))
+        when (view?.tag) {
+            NOTIFICATION_ACTIVITY_TAG -> view.context.startActivity(Intent(view.context, NotificationActivity::class.java))
+            BOTTOM_SHEET_ACTIVTY_TAG -> view.context.startActivity(Intent(view.context, BottomSheetActivity::class.java))
         }
     }
 

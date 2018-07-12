@@ -4,6 +4,9 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVTY_TAG
+import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        practiceTopics.add("Notifications Android")
+        practiceTopics.add(NOTIFICATION_ACTIVITY_TAG)
+        practiceTopics.add(BOTTOM_SHEET_ACTIVTY_TAG)
 
         rvPractice.layoutManager = LinearLayoutManager(this)
         rvPractice.adapter = PracticeAdapter(this, practiceTopics)
