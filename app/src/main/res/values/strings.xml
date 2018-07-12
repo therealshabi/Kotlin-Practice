@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kotlin Practice</string>
+    <string name="simple_notification">Simple Notification</string>
+    <string name="notification_with_intent">Notification with Intent</string>
+    <string name="big_text_notification">Big text Notification</string>
+    <string name="inbox_style_notification">Inbox Style Notification</string>
+    <string name="big_picture_notification">Big Picture Notification</string>
+    <string name="messaging_style_notification">Messaging Style Notification</string>
+    <string name="name">Shahbaz Hussain</string>
+</resources>
