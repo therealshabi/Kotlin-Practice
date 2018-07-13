@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Notification.NotificationActivity" />
-        <activity android:name=".BottomSheet.BottomSheetActivity"></activity>
+        <activity android:name=".BottomSheet.BottomSheetActivity" />
+        <activity android:name=".BottomSheet.BottomSheetFragment"></activity>
     </application>
 
 </manifest>
