@@ -18,8 +18,8 @@ import java.util.*
 class NotificationUtil {
 
     companion object {
-        val DEFAULT_CHANNEL_ID: String = "default_channel"
-        val DEFAULT_CHANNEL_NAME = "default"
+        private const val DEFAULT_CHANNEL_ID: String = "default_channel"
+        private const val DEFAULT_CHANNEL_NAME = "default"
         var SIMPLE_NOTIFICATION_ID = 1
         var NOTIFICATION_WITH_INTENT_ID = 2
         var BIG_TEXT_STYLE_NOTIFICATION_ID = 3
@@ -147,7 +147,7 @@ class NotificationUtil {
             return builder.build()
         }
 
-        fun getBitmapFromVectorDrawable(context: Context, drawableId: Int): Bitmap {
+        private fun getBitmapFromVectorDrawable(context: Context, drawableId: Int): Bitmap {
             var drawable = ContextCompat.getDrawable(context, drawableId)
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
                 drawable = DrawableCompat.wrap(drawable!!).mutate()
