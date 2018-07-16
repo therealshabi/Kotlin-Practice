@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".Notification.NotificationActivity" />
         <activity android:name=".BottomSheet.BottomSheetActivity" />
-        <activity android:name=".BottomSheet.BottomSheetFragmentActivity"></activity>
+        <activity android:name=".BottomSheet.BottomSheetFragmentActivity" />
+        <activity android:name=".NavigationLayout.InwardNavigationActivity"></activity>
     </application>
 
 </manifest>

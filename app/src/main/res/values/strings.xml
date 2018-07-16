@@ -18,4 +18,11 @@
     <string name="payment_method">Please select a payment method</string>
     <string name="cash">Cash</string>
     <string name="card">Card</string>
+    <string name="inward_sliding_drawer_text">Welcome to Inward Siding Drawer</string>
+    <string name="drawer_text">You are in the drawer</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>
