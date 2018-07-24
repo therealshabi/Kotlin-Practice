@@ -19,7 +19,8 @@
         <activity android:name=".BottomSheet.BottomSheetActivity" />
         <activity android:name=".BottomSheet.BottomSheetFragmentActivity" />
         <activity android:name=".NavigationLayout.InwardNavigationActivity" />
-        <activity android:name=".TwoPaneLayout.TwoPaneLayoutActivity"></activity>
+        <activity android:name=".TwoPaneLayout.TwoPaneLayoutActivity" />
+        <activity android:name=".TwoPaneLayout.SettingsDetailActivity"></activity>
     </application>
 
 </manifest>

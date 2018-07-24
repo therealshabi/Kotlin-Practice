@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Kotlin Practice</string>
+
     <string name="simple_notification">Simple Notification</string>
     <string name="notification_with_intent">Notification with Intent</string>
     <string name="big_text_notification">Big text Notification</string>
@@ -7,17 +8,22 @@
     <string name="big_picture_notification">Big Picture Notification</string>
     <string name="messaging_style_notification">Messaging Style Notification</string>
     <string name="name">Shahbaz Hussain</string>
+
     <string name="open_bottom_sheet">Open Bottom Sheet</string>
     <string name="close_bottom_sheet">Close Bottom Sheet</string>
     <string name="lorem_ipsum_title">Lorem Ipsum</string>
-    <string name="lorem_ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="lorem_ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="total_price">Total Price: Rs. 762</string>
     <string name="payment_method">Please select a payment method</string>
     <string name="cash">Cash</string>
     <string name="card">Card</string>
+
     <string name="inward_sliding_drawer_text">Welcome to Inward Siding Drawer</string>
     <string name="drawer_text">You are in the drawer</string>
     <string name="option_1">Option 1</string>
@@ -25,7 +31,15 @@
     <string name="option_3">Option 3</string>
     <string name="open">open</string>
     <string name="close">close</string>
+
     <string name="storage">Storage</string>
     <string name="display">Display</string>
     <string name="network">Network</string>
+    <string name="network_description">Here you can manipulate various settings such as WiFi,
+        Bluetooth, NFC and Data Services.</string>
+    <string name="display_description">Here you can manipulate various settings like Brightness,
+        Font Size, Screen Rotation, Color Mode and Wallpaper.</string>
+    <string name="storage_description">Here you have access to inbuilt File Manager and various
+        options such as Formatting Phone, Making Free Space and in depth storage details.</string>
+    <string name="class_cast_exception_settings_option">must implement SettingOptionsFragment.OnOptionClickListener</string>
 </resources>
