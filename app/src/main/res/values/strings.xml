@@ -25,4 +25,7 @@
     <string name="option_3">Option 3</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="storage">Storage</string>
+    <string name="display">Display</string>
+    <string name="network">Network</string>
 </resources>
