@@ -18,7 +18,8 @@ class InwardNavigationActivity : AppCompatActivity() {
         drawerLayout.setScrimColor(Color.TRANSPARENT)
         drawerLayout.drawerElevation = 0f
 
-        val actionBarDrawerToggle = object : ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close) {
+        val actionBarDrawerToggle = object : ActionBarDrawerToggle(
+                this, drawerLayout, R.string.open, R.string.close) {
 
             private val scaleFactor = 10f
 

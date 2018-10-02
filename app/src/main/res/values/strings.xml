@@ -42,4 +42,5 @@
     <string name="storage_description">Here you have access to inbuilt File Manager and various
         options such as Formatting Phone, Making Free Space and in depth storage details.</string>
     <string name="class_cast_exception_settings_option">must implement SettingOptionsFragment.OnOptionClickListener</string>
+    <string name="get_location">Get Coarse Location</string>
 </resources>

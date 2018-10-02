@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.BOTTOM_SHEET_FRAGMENT_ACTIVITY
 import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.INWARD_NAVIGATION_LAYOUT_ACTIVITY
+import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.LOCATION_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.TWO_PANE_LAYOUT_ACTIVITY
 
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         practiceTopics.add(BOTTOM_SHEET_FRAGMENT_ACTIVITY)
         practiceTopics.add(INWARD_NAVIGATION_LAYOUT_ACTIVITY)
         practiceTopics.add(TWO_PANE_LAYOUT_ACTIVITY)
+        practiceTopics.add(LOCATION_ACTIVITY_TAG)
 
         rvPractice.layoutManager = LinearLayoutManager(this)
         rvPractice.adapter = PracticeAdapter(this, practiceTopics)
