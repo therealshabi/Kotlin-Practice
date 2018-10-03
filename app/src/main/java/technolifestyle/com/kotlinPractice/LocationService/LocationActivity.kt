@@ -68,7 +68,7 @@ class LocationActivity : AppCompatActivity() {
                 }
 
                 override fun onLocationChanged(location: Location?) {
-                    Log.d("LOCATION", String.format("lat : %s, long : %s", location?.latitude, location?.longitude))
+                    Log.d("The Location is : ", String.format("lat : %s, long : %s", location?.latitude, location?.longitude))
                     Toast.makeText(baseContext, "SUCCESSFUL", LENGTH_LONG).show()
                 }
             }, null)
