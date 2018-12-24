@@ -1,11 +1,11 @@
-package technolifestyle.com.kotlinPractice.TwoPaneLayout
+package technolifestyle.com.kotlinPractice.twoPaneLayout
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import technolifestyle.com.kotlinPractice.R
-import technolifestyle.com.kotlinPractice.TwoPaneLayout.TwoPaneFragments.DisplaySettingsFragment
-import technolifestyle.com.kotlinPractice.TwoPaneLayout.TwoPaneFragments.NetworkSettingsFragment
-import technolifestyle.com.kotlinPractice.TwoPaneLayout.TwoPaneFragments.StorageSettingsFragment
+import technolifestyle.com.kotlinPractice.twoPaneLayout.twoPaneFragments.DisplaySettingsFragment
+import technolifestyle.com.kotlinPractice.twoPaneLayout.twoPaneFragments.NetworkSettingsFragment
+import technolifestyle.com.kotlinPractice.twoPaneLayout.twoPaneFragments.StorageSettingsFragment
 
 class SettingsDetailActivity : AppCompatActivity() {
 

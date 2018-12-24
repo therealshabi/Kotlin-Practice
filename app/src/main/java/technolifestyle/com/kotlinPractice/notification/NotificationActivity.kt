@@ -1,9 +1,9 @@
-package technolifestyle.com.kotlinPractice.Notification
+package technolifestyle.com.kotlinPractice.notification
 
 import android.app.Notification
 import android.app.NotificationManager
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_notification.*
 import technolifestyle.com.kotlinPractice.R
 

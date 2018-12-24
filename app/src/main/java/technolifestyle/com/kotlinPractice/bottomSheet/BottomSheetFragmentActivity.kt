@@ -1,7 +1,7 @@
-package technolifestyle.com.kotlinPractice.BottomSheet
+package technolifestyle.com.kotlinPractice.bottomSheet
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_bottom_sheet_fragment.*
 import technolifestyle.com.kotlinPractice.R
 

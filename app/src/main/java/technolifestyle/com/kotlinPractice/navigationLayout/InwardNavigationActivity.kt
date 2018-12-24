@@ -1,10 +1,10 @@
-package technolifestyle.com.kotlinPractice.NavigationLayout
+package technolifestyle.com.kotlinPractice.navigationLayout
 
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_inward_navigation.*
 import technolifestyle.com.kotlinPractice.R
 

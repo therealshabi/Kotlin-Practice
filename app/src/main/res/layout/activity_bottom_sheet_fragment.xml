@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="technolifestyle.com.kotlinPractice.BottomSheet.BottomSheetFragmentActivity">
+    tools:context="technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetFragmentActivity">
 
     <Button
         android:id="@+id/showBottomSheetBtn"

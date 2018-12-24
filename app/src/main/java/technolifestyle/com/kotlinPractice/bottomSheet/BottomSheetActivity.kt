@@ -1,13 +1,13 @@
-package technolifestyle.com.kotlinPractice.BottomSheet
+package technolifestyle.com.kotlinPractice.bottomSheet
 
 import android.os.Bundle
-import android.support.design.widget.BottomSheetBehavior
-import android.support.design.widget.BottomSheetBehavior.STATE_EXPANDED
-import android.support.design.widget.BottomSheetBehavior.STATE_HIDDEN
-import android.support.v4.widget.NestedScrollView
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.NestedScrollView
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_EXPANDED
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_HIDDEN
 import kotlinx.android.synthetic.main.activity_bottom_sheet.*
 import technolifestyle.com.kotlinPractice.R
 
@@ -26,7 +26,7 @@ class BottomSheetActivity : AppCompatActivity() {
             mBottomSheetBehavior.state = STATE_EXPANDED
         }
 
-        closeBottomSheetBtn.setOnClickListener{
+        closeBottomSheetBtn.setOnClickListener {
             mBottomSheetBehavior.state = STATE_HIDDEN
         }
 
@@ -48,6 +48,9 @@ class BottomSheetActivity : AppCompatActivity() {
                     }
                     BottomSheetBehavior.STATE_HIDDEN -> {
                         "HIDDEN"
+                    }
+                    BottomSheetBehavior.STATE_HALF_EXPANDED -> {
+                        ""
                     }
                     else -> ""
                 }

@@ -1,11 +1,11 @@
-package technolifestyle.com.kotlinPractice.TwoPaneLayout.TwoPaneFragments
+package technolifestyle.com.kotlinPractice.twoPaneLayout.twoPaneFragments
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import technolifestyle.com.kotlinPractice.R
 
 class NetworkSettingsFragment : Fragment() {

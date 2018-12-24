@@ -1,4 +1,4 @@
-package technolifestyle.com.kotlinPractice.Utils
+package technolifestyle.com.kotlinPractice.utils
 
 class StringUtils {
 

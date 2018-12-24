@@ -2,23 +2,23 @@ package technolifestyle.com.kotlinPractice
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.main_card_item.view.*
-import technolifestyle.com.kotlinPractice.BottomSheet.BottomSheetActivity
-import technolifestyle.com.kotlinPractice.BottomSheet.BottomSheetFragmentActivity
-import technolifestyle.com.kotlinPractice.LocationService.LocationActivity
-import technolifestyle.com.kotlinPractice.NavigationLayout.InwardNavigationActivity
-import technolifestyle.com.kotlinPractice.Notification.NotificationActivity
-import technolifestyle.com.kotlinPractice.TwoPaneLayout.TwoPaneLayoutActivity
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.BOTTOM_SHEET_FRAGMENT_ACTIVITY
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.INWARD_NAVIGATION_LAYOUT_ACTIVITY
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.LOCATION_ACTIVITY_TAG
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.TWO_PANE_LAYOUT_ACTIVITY
+import technolifestyle.com.kotlinPractice.locationService.LocationActivity
+import technolifestyle.com.kotlinPractice.navigationLayout.InwardNavigationActivity
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_FRAGMENT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.INWARD_NAVIGATION_LAYOUT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.LOCATION_ACTIVITY_TAG
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.TWO_PANE_LAYOUT_ACTIVITY
+import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetActivity
+import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetFragmentActivity
+import technolifestyle.com.kotlinPractice.notification.NotificationActivity
+import technolifestyle.com.kotlinPractice.twoPaneLayout.TwoPaneLayoutActivity
 
 class PracticeAdapter(private val context: Context?,
                       private val practiceTopics: MutableList<String>) :

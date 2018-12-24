@@ -1,15 +1,15 @@
 package technolifestyle.com.kotlinPractice
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.BOTTOM_SHEET_FRAGMENT_ACTIVITY
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.INWARD_NAVIGATION_LAYOUT_ACTIVITY
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.LOCATION_ACTIVITY_TAG
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
-import technolifestyle.com.kotlinPractice.Utils.StringUtils.Companion.TWO_PANE_LAYOUT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_FRAGMENT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.INWARD_NAVIGATION_LAYOUT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.LOCATION_ACTIVITY_TAG
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.TWO_PANE_LAYOUT_ACTIVITY
 
 
 class MainActivity : AppCompatActivity() {

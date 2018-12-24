@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="technolifestyle.com.kotlinPractice.Notification.NotificationActivity">
+    tools:context="technolifestyle.com.kotlinPractice.notification.NotificationActivity">
 
     <Button
         android:id="@+id/simpleNotificationBtn"
@@ -54,5 +54,4 @@
         android:layout_margin="4dp"
         android:padding="16dp"
         android:text="@string/messaging_style_notification" />
-
 </LinearLayout>

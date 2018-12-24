@@ -1,20 +1,20 @@
-package technolifestyle.com.kotlinPractice.BottomSheet
+package technolifestyle.com.kotlinPractice.bottomSheet
 
 
 import android.annotation.SuppressLint
 import android.app.Dialog
-import android.support.design.widget.BottomSheetBehavior
-import android.support.design.widget.BottomSheetDialogFragment
-import android.support.design.widget.CoordinatorLayout
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Toast
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import technolifestyle.com.kotlinPractice.R
 
 class BottomSheetFragment : BottomSheetDialogFragment() {
 
     @SuppressLint("InflateParams", "RestrictedApi")
-    override fun setupDialog(dialog: Dialog?, style: Int) {
+    override fun setupDialog(dialog: Dialog, style: Int) {
         super.setupDialog(dialog, style)
 
         val view = LayoutInflater.from(context).inflate(R.layout.fragment_bottom_sheet, null)
@@ -42,6 +42,9 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
                         }
                         BottomSheetBehavior.STATE_HIDDEN -> {
                             "HIDDEN"
+                        }
+                        BottomSheetBehavior.STATE_HALF_EXPANDED -> {
+                            ""
                         }
                         else -> ""
                     }

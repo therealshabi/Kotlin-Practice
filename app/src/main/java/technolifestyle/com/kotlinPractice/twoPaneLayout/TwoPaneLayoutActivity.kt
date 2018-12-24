@@ -1,14 +1,14 @@
-package technolifestyle.com.kotlinPractice.TwoPaneLayout
+package technolifestyle.com.kotlinPractice.twoPaneLayout
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.FragmentManager
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
 import kotlinx.android.synthetic.main.activity_two_pane_layout.*
 import technolifestyle.com.kotlinPractice.R
-import technolifestyle.com.kotlinPractice.TwoPaneLayout.TwoPaneFragments.DisplaySettingsFragment
-import technolifestyle.com.kotlinPractice.TwoPaneLayout.TwoPaneFragments.NetworkSettingsFragment
-import technolifestyle.com.kotlinPractice.TwoPaneLayout.TwoPaneFragments.StorageSettingsFragment
+import technolifestyle.com.kotlinPractice.twoPaneLayout.twoPaneFragments.DisplaySettingsFragment
+import technolifestyle.com.kotlinPractice.twoPaneLayout.twoPaneFragments.NetworkSettingsFragment
+import technolifestyle.com.kotlinPractice.twoPaneLayout.twoPaneFragments.StorageSettingsFragment
 
 
 class TwoPaneLayoutActivity : AppCompatActivity(), SettingOptionsFragment.OnOptionClickListener {
@@ -22,10 +22,11 @@ class TwoPaneLayoutActivity : AppCompatActivity(), SettingOptionsFragment.OnOpti
 
         fragmentManager = supportFragmentManager
 
-        isTwoPane = detailContainer != null
+        isTwoPane = detailContainer!=null
 
         if (savedInstanceState == null) {
-            fragmentManager.beginTransaction().add(R.id.container, SettingOptionsFragment()).commit()
+            fragmentManager.beginTransaction()
+                    .add(R.id.container, SettingOptionsFragment()).commit()
         }
     }
 
