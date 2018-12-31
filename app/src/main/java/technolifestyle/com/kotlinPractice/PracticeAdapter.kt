@@ -7,18 +7,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.main_card_item.view.*
+import technolifestyle.com.kotlinPractice.autoImageSlider.AutoImageSliderActivity
+import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetActivity
+import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetFragmentActivity
 import technolifestyle.com.kotlinPractice.locationService.LocationActivity
 import technolifestyle.com.kotlinPractice.navigationLayout.InwardNavigationActivity
+import technolifestyle.com.kotlinPractice.notification.NotificationActivity
+import technolifestyle.com.kotlinPractice.twoPaneLayout.TwoPaneLayoutActivity
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.AUTO_IMAGE_SLIDER_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
-import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_FRAGMENT_ACTIVITY
-import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.INWARD_NAVIGATION_LAYOUT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion
+        .BOTTOM_SHEET_FRAGMENT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion
+        .INWARD_NAVIGATION_LAYOUT_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.LOCATION_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.TWO_PANE_LAYOUT_ACTIVITY
-import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetActivity
-import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetFragmentActivity
-import technolifestyle.com.kotlinPractice.notification.NotificationActivity
-import technolifestyle.com.kotlinPractice.twoPaneLayout.TwoPaneLayoutActivity
 
 class PracticeAdapter(private val context: Context?,
                       private val practiceTopics: MutableList<String>) :
@@ -48,12 +52,20 @@ class PracticeViewHolder internal constructor(itemView: View) : RecyclerView.Vie
 
     override fun onClick(view: View?) {
         when (view?.tag) {
-            NOTIFICATION_ACTIVITY_TAG -> view.context.startActivity(Intent(view.context, NotificationActivity::class.java))
-            BOTTOM_SHEET_ACTIVITY_TAG -> view.context.startActivity(Intent(view.context, BottomSheetActivity::class.java))
-            BOTTOM_SHEET_FRAGMENT_ACTIVITY -> view.context.startActivity(Intent(view.context, BottomSheetFragmentActivity::class.java))
-            INWARD_NAVIGATION_LAYOUT_ACTIVITY -> view.context.startActivity(Intent(view.context, InwardNavigationActivity::class.java))
-            TWO_PANE_LAYOUT_ACTIVITY -> view.context.startActivity(Intent(view.context, TwoPaneLayoutActivity::class.java))
-            LOCATION_ACTIVITY_TAG -> view.context.startActivity(Intent(view.context, LocationActivity::class.java))
+            NOTIFICATION_ACTIVITY_TAG -> view.context.startActivity(
+                    Intent(view.context, NotificationActivity::class.java))
+            BOTTOM_SHEET_ACTIVITY_TAG -> view.context.startActivity(Intent(
+                    view.context, BottomSheetActivity::class.java))
+            BOTTOM_SHEET_FRAGMENT_ACTIVITY -> view.context.startActivity(Intent(
+                    view.context, BottomSheetFragmentActivity::class.java))
+            INWARD_NAVIGATION_LAYOUT_ACTIVITY -> view.context.startActivity(Intent(
+                    view.context, InwardNavigationActivity::class.java))
+            TWO_PANE_LAYOUT_ACTIVITY -> view.context.startActivity(Intent(
+                    view.context, TwoPaneLayoutActivity::class.java))
+            LOCATION_ACTIVITY_TAG -> view.context.startActivity(Intent(
+                    view.context, LocationActivity::class.java))
+            AUTO_IMAGE_SLIDER_ACTIVITY -> view.context.startActivity(Intent(
+                    view.context, AutoImageSliderActivity::class.java))
         }
     }
 

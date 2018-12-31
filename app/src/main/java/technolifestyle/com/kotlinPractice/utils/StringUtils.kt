@@ -9,5 +9,6 @@ class StringUtils {
         const val INWARD_NAVIGATION_LAYOUT_ACTIVITY = "Sliding Navigation Layout Android"
         const val TWO_PANE_LAYOUT_ACTIVITY = "Two Pane Layout Android"
         const val LOCATION_ACTIVITY_TAG = "Location Activity Android"
+        const val AUTO_IMAGE_SLIDER_ACTIVITY = "Auto Image Slider"
     }
 }

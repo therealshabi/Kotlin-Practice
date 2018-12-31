@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-feature android:name="android.hardware.location.network" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +15,7 @@
         android:roundIcon="@drawable/ic_gaming"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="technolifestyle.com.kotlinPractice.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -22,13 +23,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="technolifestyle.com.kotlinPractice.notification.NotificationActivity" />
-        <activity android:name="technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetActivity" />
-        <activity android:name="technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetFragmentActivity" />
-        <activity android:name="technolifestyle.com.kotlinPractice.navigationLayout.InwardNavigationActivity" />
-        <activity android:name="technolifestyle.com.kotlinPractice.twoPaneLayout.TwoPaneLayoutActivity" />
-        <activity android:name="technolifestyle.com.kotlinPractice.twoPaneLayout.SettingsDetailActivity" />
-        <activity android:name="technolifestyle.com.kotlinPractice.locationService.LocationActivity"></activity>
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".bottomSheet.BottomSheetActivity" />
+        <activity android:name=".bottomSheet.BottomSheetFragmentActivity" />
+        <activity android:name=".navigationLayout.InwardNavigationActivity" />
+        <activity android:name=".twoPaneLayout.TwoPaneLayoutActivity" />
+        <activity android:name=".twoPaneLayout.SettingsDetailActivity" />
+        <activity android:name=".locationService.LocationActivity" />
+        <activity android:name=".autoImageSlider.AutoImageSliderActivity" />
     </application>
 
 </manifest>
