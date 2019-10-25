@@ -3,6 +3,7 @@ package technolifestyle.com.kotlinPractice.asyncTask
 import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_async_task.*
 import java.lang.ref.WeakReference
@@ -37,6 +38,7 @@ class AsyncTaskActivity : AppCompatActivity() {
             private val mWeakActivity: WeakReference<AsyncTaskActivity> = WeakReference(activity)
 
             override fun doInBackground(vararg params: String?): Pair<String?, String?> {
+                publishProgress(null)
                 count++
                 val time = params[1]?.toLong() ?: 1
                 Thread.sleep(time)
@@ -44,8 +46,14 @@ class AsyncTaskActivity : AppCompatActivity() {
                 return Pair(params[0], params[1])
             }
 
+            override fun onProgressUpdate(vararg values: Void?) {
+                super.onProgressUpdate(*values)
+                mWeakActivity.get()?.progressBar?.visibility = View.VISIBLE
+            }
+
             override fun onPostExecute(result: Pair<String?, String?>) {
                 super.onPostExecute(result)
+                mWeakActivity.get()?.progressBar?.visibility = View.GONE
                 when (count) {
                     1 -> {
                         mWeakActivity.get()?.firstTaskText?.text = result.first
