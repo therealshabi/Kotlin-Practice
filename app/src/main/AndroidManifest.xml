@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-feature android:name="android.hardware.location.network" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -15,6 +16,7 @@
         android:roundIcon="@drawable/ic_gaming"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".asyncTask.AsyncTaskActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

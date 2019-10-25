@@ -10,5 +10,6 @@ class StringUtils {
         const val TWO_PANE_LAYOUT_ACTIVITY = "Two Pane Layout Android"
         const val LOCATION_ACTIVITY_TAG = "Location Activity Android"
         const val AUTO_IMAGE_SLIDER_ACTIVITY = "Auto Image Slider"
+        const val ASYNC_TASK_ACTIVITY = "Async Task Android"
     }
 }
