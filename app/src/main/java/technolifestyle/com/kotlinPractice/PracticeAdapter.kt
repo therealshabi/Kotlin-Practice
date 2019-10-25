@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.main_card_item.view.*
+import technolifestyle.com.kotlinPractice.asyncTask.AsyncTaskActivity
 import technolifestyle.com.kotlinPractice.autoImageSlider.AutoImageSliderActivity
 import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetActivity
 import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetFragmentActivity
@@ -68,7 +69,7 @@ class PracticeViewHolder internal constructor(itemView: View) : RecyclerView.Vie
             AUTO_IMAGE_SLIDER_ACTIVITY -> view.context.startActivity(Intent(
                     view.context, AutoImageSliderActivity::class.java))
             ASYNC_TASK_ACTIVITY -> view.context.startActivity(Intent(
-                    view.context, AutoImageSliderActivity::class.java))
+                    view.context, AsyncTaskActivity::class.java))
         }
     }
 
