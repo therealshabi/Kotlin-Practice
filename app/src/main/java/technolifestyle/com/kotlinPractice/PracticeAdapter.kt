@@ -14,6 +14,7 @@ import technolifestyle.com.kotlinPractice.locationService.LocationActivity
 import technolifestyle.com.kotlinPractice.navigationLayout.InwardNavigationActivity
 import technolifestyle.com.kotlinPractice.notification.NotificationActivity
 import technolifestyle.com.kotlinPractice.twoPaneLayout.TwoPaneLayoutActivity
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.ASYNC_TASK_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.AUTO_IMAGE_SLIDER_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion
@@ -65,6 +66,8 @@ class PracticeViewHolder internal constructor(itemView: View) : RecyclerView.Vie
             LOCATION_ACTIVITY_TAG -> view.context.startActivity(Intent(
                     view.context, LocationActivity::class.java))
             AUTO_IMAGE_SLIDER_ACTIVITY -> view.context.startActivity(Intent(
+                    view.context, AutoImageSliderActivity::class.java))
+            ASYNC_TASK_ACTIVITY -> view.context.startActivity(Intent(
                     view.context, AutoImageSliderActivity::class.java))
         }
     }
