@@ -11,5 +11,6 @@ class StringUtils {
         const val LOCATION_ACTIVITY_TAG = "Location Activity Android"
         const val AUTO_IMAGE_SLIDER_ACTIVITY = "Auto Image Slider"
         const val ASYNC_TASK_ACTIVITY = "Async Task Android"
+        const val CONTENT_PROVIDER_ACTIVITY = "Content Provider Android"
     }
 }

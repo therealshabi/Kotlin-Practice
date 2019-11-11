@@ -8,6 +8,7 @@ import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.ASYNC_TASK
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.AUTO_IMAGE_SLIDER_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_FRAGMENT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.CONTENT_PROVIDER_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.INWARD_NAVIGATION_LAYOUT_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.LOCATION_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.NOTIFICATION_ACTIVITY_TAG
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         practiceTopics.add(LOCATION_ACTIVITY_TAG)
         practiceTopics.add(AUTO_IMAGE_SLIDER_ACTIVITY)
         practiceTopics.add(ASYNC_TASK_ACTIVITY)
+        practiceTopics.add(CONTENT_PROVIDER_ACTIVITY)
 
         rvPractice.layoutManager = LinearLayoutManager(this)
         rvPractice.adapter = PracticeAdapter(this, practiceTopics)

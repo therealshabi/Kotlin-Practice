@@ -11,6 +11,7 @@ import technolifestyle.com.kotlinPractice.asyncTask.AsyncTaskActivity
 import technolifestyle.com.kotlinPractice.autoImageSlider.AutoImageSliderActivity
 import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetActivity
 import technolifestyle.com.kotlinPractice.bottomSheet.BottomSheetFragmentActivity
+import technolifestyle.com.kotlinPractice.contentprovider.ContentProviderActivity
 import technolifestyle.com.kotlinPractice.locationService.LocationActivity
 import technolifestyle.com.kotlinPractice.navigationLayout.InwardNavigationActivity
 import technolifestyle.com.kotlinPractice.notification.NotificationActivity
@@ -20,6 +21,7 @@ import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.AUTO_IMAGE
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.BOTTOM_SHEET_ACTIVITY_TAG
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion
         .BOTTOM_SHEET_FRAGMENT_ACTIVITY
+import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.CONTENT_PROVIDER_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion
         .INWARD_NAVIGATION_LAYOUT_ACTIVITY
 import technolifestyle.com.kotlinPractice.utils.StringUtils.Companion.LOCATION_ACTIVITY_TAG
@@ -70,6 +72,8 @@ class PracticeViewHolder internal constructor(itemView: View) : RecyclerView.Vie
                     view.context, AutoImageSliderActivity::class.java))
             ASYNC_TASK_ACTIVITY -> view.context.startActivity(Intent(
                     view.context, AsyncTaskActivity::class.java))
+            CONTENT_PROVIDER_ACTIVITY -> view.context.startActivity(Intent(
+                    view.context, ContentProviderActivity::class.java))
         }
     }
 
